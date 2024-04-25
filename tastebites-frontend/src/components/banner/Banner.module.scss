@@ -1,0 +1,89 @@
+@import '../../utils.module.scss';
+
+.container {
+    background: #FFF;
+    box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.06);
+    display: flex;
+    padding: 30px;
+    margin-bottom: 117px;
+    .content {
+        padding-left: 62px;
+        padding-right: 90px;
+        color: $black-01;
+        margin: auto;
+
+        >div {
+            
+            font-weight: 600;
+            text-transform: capitalize;
+            @include setSize(38px, 50px);
+        }
+
+        >p {
+            color: var(--Gray-600, #556070);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: $black-01;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 35px; 
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
+
+    }
+}
+
+@include for-tablet-only {
+    .container {
+        display: block;
+        padding: 40px;
+        >img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .content {
+            padding-left: 12px;
+            >div {
+                margin-top: 10px;
+                @include setSize(30px, 46px);
+            }
+            >p {
+                margin-top: 16px;
+                @include setSize(16px, 24px);
+            }
+
+        }
+    }
+
+}
+@include for-tablet-only{
+    .container {
+        display: block;
+        padding:12px 6px;
+        margin-bottom: 30px;
+    }
+}
+@include for-mobile-only {
+    .container {
+        display: block;
+        padding:12px 6px;
+        margin-bottom: 30px;
+        >img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .content {
+            padding:0 6px;
+            >div {
+                margin-top: 10px;
+                @include setSize(30px, 46px);
+            }
+            >p {
+                margin-top: 16px;
+                @include setSize(16px, 24px);
+            }
+
+        }
+    }
+
+}

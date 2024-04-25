@@ -1,0 +1,180 @@
+{
+  "users": [
+    {
+      "id": "8836",
+      "user": {
+        "email": "shaada@gmail.com",
+        "phone": "8736289201",
+        "password": "Abcdef123",
+        "reentrPwd": "Abcdef123",
+        "ratings": [
+          {
+            "very-berry": 4,
+            "ginger": 3,
+            "loaded-berry": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "196c",
+      "user": {
+        "email": "abc@gmail.com",
+        "phone": "7373892929",
+        "password": "Qsssss2345",
+        "reentrPwd": "Qsssss2345",
+        "ratings": [
+          {
+            "very-berry": 5,
+            "ginger": 2,
+            "loaded-berry": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "4ed6",
+      "user": {
+        "email": "sshhh@gmail.com",
+        "phone": "1234567890",
+        "password": "Hen@12345",
+        "reentrPwd": "Hen@12345",
+        "ratings": [
+          {
+            "very-berry": 5,
+            "ginger": 3,
+            "loaded-berry": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "b620",
+      "user": {
+        "email": "shn@gmail.com",
+        "phone": "7475395820",
+        "password": "Jam@12345",
+        "reentrPwd": "Jam@12345",
+        "ratings": [
+          {
+            "very-berry": 0,
+            "ginger": 0,
+            "loaded-berry": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "7dea",
+      "user": {
+        "email": "",
+        "phone": "",
+        "password": "",
+        "reentrPwd": "",
+        "ratings": [
+          {
+            "very-berry": 0,
+            "ginger": 0,
+            "loaded-berry": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "87a3",
+      "user": {
+        "email": "",
+        "phone": "",
+        "password": "",
+        "reentrPwd": "",
+        "ratings": [
+          {
+            "very-berry": 0,
+            "ginger": 0,
+            "loaded-berry": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "6614",
+      "user": {
+        "email": "hum@gmail.com",
+        "phone": "3333333333",
+        "password": "Hum12345",
+        "reentrPwd": "Hum12345",
+        "ratings": [
+          {
+            "very-berry": 0,
+            "ginger": 0,
+            "loaded-berry": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "1a80",
+      "user": {
+        "email": "hum@gmail.com",
+        "phone": "3333333333",
+        "password": "Hum12345",
+        "reentrPwd": "Hum12345",
+        "ratings": [
+          {
+            "very-berry": 0,
+            "ginger": 0,
+            "loaded-berry": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "6e63",
+      "user": {
+        "email": "yum@gmail.com",
+        "phone": "1234566667",
+        "password": "Yum12345",
+        "reentrPwd": "Yum12345",
+        "ratings": [
+          {
+            "very-berry": 3,
+            "ginger": 5,
+            "loaded-berry": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "0602",
+      "user": {
+        "email": "shaada@gmail.com",
+        "phone": "2323333333",
+        "password": "Shaada12345",
+        "reentrPwd": "Shaada12345",
+        "ratings": [
+          {
+            "very-berry": 0,
+            "ginger": 0,
+            "loaded-berry": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "2e54",
+      "user": {
+        "email": "shn@gmail.com",
+        "phone": "4443324242",
+        "password": "Aam@1234",
+        "reentrPwd": "Aam@1234",
+        "ratings": [
+          {
+            "very-berry": 0,
+            "ginger": 0,
+            "loaded-berry": 0
+          }
+        ]
+      }
+    }
+  ]
+}

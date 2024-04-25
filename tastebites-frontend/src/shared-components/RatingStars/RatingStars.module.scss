@@ -1,0 +1,13 @@
+
+  .star {
+    cursor: pointer;
+    color: #C8C8C8;
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+  }
+  
+  .rated {
+    @extend .star;
+    color: #E50000; 
+  }

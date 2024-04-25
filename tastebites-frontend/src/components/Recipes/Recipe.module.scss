@@ -1,0 +1,131 @@
+@import '../../utils.module.scss';
+
+.container {
+    margin-top: 90px;
+.latestCardImage{
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+    .title {
+        @include setSize(30px, 50px);
+        color: $black-01;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+
+    .latestCards {
+        padding: 20px 40px 49px;
+
+        .titleCard {
+            color: $black-01;
+            @include setSize(20px, 50px);
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        >p {
+            color: $grey-04;
+            font-weight: 400;
+            @include setSize(16px, 27px);
+            margin-top: 2px;
+
+        }
+
+        .authorBox {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 400;
+            text-transform: capitalize;
+            @include setSize(16px, 50px);
+
+            .date {
+                color: $grey-05;
+                margin-right: 10px;
+            }
+
+            .author {
+                color: $black-01;
+                display: flex;
+
+                img {
+                    margin-right: 10px;
+   
+                }
+
+            }
+        }
+    }
+
+    .freshCard {
+        color: $black-01;
+        @include setSize(20px, 50px);
+        margin-bottom: 15px;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    .freshCardImage {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+}
+
+@include for-mobile-only{
+
+    .container {
+        margin-top: 10px;
+ 
+        .title {
+            @include setSize(25px, 30px);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        .latestCards {
+            padding: 20px;  
+            .titleCard {
+                @include setSize(20px, 30px);
+            }   
+            .authorBox {
+                display: block;
+                .author {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        .freshCard {
+            @include setSize(20px, 30px);
+
+        }
+    
+    }
+
+}
+
+@include for-tablet-only{
+    .container {
+        margin-top: 30px;
+ 
+        .title {
+            @include setSize(25px, 30px);
+            margin-bottom: 20px;
+        }
+    
+        .latestCards {
+            padding: 20px;  
+            .titleCard {
+                @include setSize(20px, 30px);
+            }   
+
+        }
+
+        .freshCard {
+            @include setSize(20px, 30px);
+
+        }
+    }
+}

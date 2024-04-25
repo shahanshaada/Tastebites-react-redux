@@ -1,0 +1,35 @@
+//Viewports
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$large-desktop-width:1440px;
+//color codes
+$grey-01: #F9F9F9;
+$grey-02:#C9C9C9;
+$grey-03:rgba(217, 217, 217, 0.00);
+$grey-04:var(--Gray-600, #556070);
+$grey-05:#868686;
+$black-01:#000;
+$red-01:#E50000;
+$red-02:rgba(229, 0, 0, 0.18);
+
+@mixin setSize($size, $length) {
+    font-size: $size;
+    line-height: $length;
+}
+
+@mixin for-mobile-only {
+    @media (max-width: #{$tablet-width - 1px}) {
+      @content;
+    }
+  }
+@mixin for-tablet-only {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin for-desktop-only {
+  @media (min-width: #{$desktop-width}) and (max-width: #{$large-desktop-width - 1px}) {
+    @content;
+  }
+}

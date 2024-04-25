@@ -1,0 +1,120 @@
+@import '../../utils.module.scss';
+
+.banner {
+    margin: 56px 0 122px;
+    margin-left: calc((100% - 1406px) / 2);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+        color: #03337B;
+        font-weight: 600;
+        @include setSize(38px, 50px);
+        text-transform: uppercase;
+        border-bottom: 7px solid red;
+        padding-bottom: 25px;
+        margin-bottom: 50px;
+        width: fit-content;
+    }
+
+    p {
+        max-width: 560px;
+        color: var(--Gray-400, #87909D);
+        font-weight: 400;
+        @include setSize(18px, 24px);
+        margin-bottom: 50px;
+    }
+
+    input[type="text"] {
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1.5px solid #E6E8EB;
+        -webkit-appearance: none !important;
+        @include setSize(18px, 24px);
+        padding-bottom: 14px;
+        color: #868686;
+        font-weight: 400;
+    }
+
+    input[type="password"] {
+        @extend input, [type="text"]
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    textarea {
+        @extend input, [type="text"];
+        height: 102px;
+        margin-bottom: 30px;
+    }
+
+    >img {
+        position: absolute;
+        /* Position image absolutely */
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+    }
+}
+
+@include for-tablet-only {
+    .banner {
+        width: 740px;
+
+        margin: 36px auto 80px;
+        position: unset;
+        display: block;
+
+        >img {
+            display: none;
+
+        }
+    }
+
+}
+@include for-desktop-only{
+    .banner {
+        width: 950px;
+        margin: 36px auto 80px;
+       >img{
+        width: 274px;
+       }
+    }
+}
+@include for-mobile-only {
+    .banner {
+        margin: 0 24px 40px;
+        position: unset;
+        display: block;
+
+        .title {
+            @include setSize(22px, 30px);
+            border-bottom: 4px solid red;
+            padding-bottom: 14px;
+            margin-bottom: 24px;
+            width: fit-content;
+        }
+
+        p {
+
+            @include setSize(16px, 20px);
+            margin-bottom: 24px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            @include setSize(14px, 20px);
+            padding-bottom: 12px;
+        }
+
+
+        >img {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import '../../utils.module.scss';
+
+.error{
+    color: $red-01;
+    text-align: right;
+    @include setSize(18px, 24px);
+    font-weight: 400;
+    margin-top: 14px;
+}
+.field{
+    margin-bottom: 43px;
+}

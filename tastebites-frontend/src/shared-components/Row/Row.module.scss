@@ -1,0 +1,16 @@
+@import '../../utils.module.scss';
+.rowcontainer{
+    width:1406px;
+    margin-left:auto;
+    margin-right:auto;
+    @include for-desktop-only{
+        width: 950px;
+    }
+    @include for-tablet-only{
+        width: 740px;
+    }
+    @include for-mobile-only{
+        width: unset;
+        padding: 0 24px;
+    }
+}

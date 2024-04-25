@@ -1,0 +1,36 @@
+@import '../../utils.module.scss';
+
+.forgetPwd {
+    color: $red-01;
+    text-align: right;
+    @include setSize(18px, 24px);
+    font-weight: 400;
+    margin-top: 14px;
+}
+.pwdBottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup {
+    margin-top: 37px;
+    color: $black-01;
+    @include setSize(18px, 24px);
+    font-weight: 400;
+
+    a {
+    color: $black-01;
+        
+        font-weight: 600;
+    }
+}
+.error{
+    color: $red-01;
+    text-align: right;
+    @include setSize(18px, 24px);
+    font-weight: 400;
+    margin-top: 14px;
+}
+.field{
+    margin-bottom: 43px;
+}

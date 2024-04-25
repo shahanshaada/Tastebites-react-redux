@@ -1,0 +1,32 @@
+@import '../../utils.module.scss';
+
+.card {
+    img{
+        margin-bottom: 22px;
+    }
+    .title {
+        color: $black-01;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-weight: 600;
+        @include setSize(20px,24px);
+        text-transform: capitalize;
+        margin-top: 14px;
+    }
+
+    margin-bottom: 117px;
+}
+
+.custom-gutter .col-md-4 {
+    padding: 0 11px;
+  }
+
+  @include for-mobile-only{
+.card{
+    margin-bottom: 30px;
+}
+  }
+  @include for-tablet-only{
+    .card{
+        margin-bottom: 40px;
+    }
+      }
