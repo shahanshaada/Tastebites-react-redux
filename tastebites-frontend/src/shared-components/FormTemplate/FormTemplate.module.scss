@@ -8,11 +8,11 @@
     justify-content: space-between;
 
     .title {
-        color: #03337B;
+        color: $blue-01;
         font-weight: 600;
         @include setSize(38px, 50px);
         text-transform: uppercase;
-        border-bottom: 7px solid red;
+        border-bottom: 7px solid $red-01;
         padding-bottom: 25px;
         margin-bottom: 50px;
         width: fit-content;
@@ -20,7 +20,7 @@
 
     p {
         max-width: 560px;
-        color: var(--Gray-400, #87909D);
+        color: var(--Gray-400, $grey-09);
         font-weight: 400;
         @include setSize(18px, 24px);
         margin-bottom: 50px;
@@ -30,11 +30,11 @@
         display: block;
         width: 100%;
         border: none;
-        border-bottom: 1.5px solid #E6E8EB;
+        border-bottom: 1.5px solid $grey-08;
         -webkit-appearance: none !important;
         @include setSize(18px, 24px);
         padding-bottom: 14px;
-        color: #868686;
+        color: $grey-05;
         font-weight: 400;
     }
 
@@ -94,7 +94,7 @@
 
         .title {
             @include setSize(22px, 30px);
-            border-bottom: 4px solid red;
+            border-bottom: 4px solid $red-01;
             padding-bottom: 14px;
             margin-bottom: 24px;
             width: fit-content;

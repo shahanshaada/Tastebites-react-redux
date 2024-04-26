@@ -1,3 +1,4 @@
+@import '../../utils.module.scss';
 
   .star {
     cursor: pointer;
@@ -9,5 +10,5 @@
   
   .rated {
     @extend .star;
-    color: #E50000; 
+    color: $red-01; 
   }

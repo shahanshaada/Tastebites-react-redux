@@ -4,22 +4,19 @@ import RatingStars from '../../shared-components/RatingStars/RatingStars';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
+import { BACKEND_URL } from '../../environments/env';
+import { RATED_RECIPES } from '../../constants';
 
 function RatingRecipe() {
-    const datas = [
-        { id:'very-berry',title: 'Very berry Healthy Summer Smoothie', image: '/ratedRecipes/very-berry.png', rating: '' },
-        { id:'ginger',title: 'Carrot and ginger soup', image: '/ratedRecipes/carrot-ginger.png', rating: '' },
-        { id:'loaded-berry',title: 'Loaded mixed berries Minitart', image: '/ratedRecipes/loaded-berry.png', rating: '' },
 
-    ]
-    const [data,setData]=useState(datas)
+    const [data,setData]=useState(RATED_RECIPES)
     const [userrr, setUser] = useState({});
 
     const userI = useSelector((state) => state?.auth?.user);
 useEffect(() => {
     const fetchData = async () => {
         try {
-            const response = await fetch('http://localhost:3001/users');
+            const response = await fetch(BACKEND_URL);
             const users =  await response.json();
             const userLog = users.filter(u => u.user?.email === userI);
             setUser(userLog)

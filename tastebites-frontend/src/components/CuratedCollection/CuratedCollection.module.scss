@@ -1,18 +1,18 @@
 @import '../../utils.module.scss';
 
 .container {
-    background: #F9F9F9;
+    background: $grey-01;
     padding: 67px 0 52px;
 
     .title {
-        color: #000;
+        color: $black-01;
         font-weight: 600;
         @include setSize(40px, 50px);
         text-transform: capitalize;
         margin-bottom: 60px;
     }
     .custom-gutter .col-md-4 {
-        padding: 0 17px; /* Half of the desired gap (22px) */
+        padding: 0 17px; 
       }
     .card {
         margin-bottom: 45px;

@@ -1,27 +1,11 @@
 import style from './Recipe.module.scss';
 import Row from '../../shared-components/Row/Row';
 import {Link} from 'react-router-dom'
+import { FRESH_RECIPES, LATEST_RECIPES } from '../../constants';
 
 function Recipe() {
-    const latestRecipes = [
-        {
-            id:'1',
-            image: 'recipes/pie.png', title: 'Pumpkin marshmallow pie', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. '
-            , authorName: 'John Doe', authorPic: 'recipes/author.svg', postedOn: 'yesterday'
-        },
-        {   id:'2',
-            image: 'recipes/pie.png', title: 'Pumpkin marshmallow pie', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. '
-            , authorName: 'John Doe', authorPic: 'recipes/author.svg', postedOn: 'yesterday'
-        }
-    ]
-
-    const freshRecipes = [
-        {id:'3', image: 'recipes/aloo.png', title: 'Pumpkin marshmallow pie' },
-        {id:'4', image: 'recipes/thai.png', title: 'Pumpkin marshmallow pie' },
-        {id:'5', image: 'recipes/skewers.png', title: 'Pumpkin marshmallow pie' },
-        { id:'6',image: 'recipes/spagathi.png', title: 'Pumpkin marshmallow pie' },
-
-    ]
+    const latestRecipes = LATEST_RECIPES;
+    const freshRecipes = FRESH_RECIPES;
     return (
         <Row>
             <div className={`row ${style.container}`}>

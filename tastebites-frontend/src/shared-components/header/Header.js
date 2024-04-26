@@ -8,7 +8,6 @@ function Header() {
     const [isActive, setActive] = useState(false)
     const navItems=[{title:'Home',link:'/'},{title:'About Us',link:'/about'},{title:'Contact',link:'/contact'}]
     const isLoggedIn = useSelector((state) => state?.auth);
-    console.log(isLoggedIn)
 
     const openHam = () => {
       const toggleClass = () => {

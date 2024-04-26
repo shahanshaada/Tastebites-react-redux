@@ -1,5 +1,4 @@
 import style from './Footer.module.scss';
-import { useState } from 'react';
 import Row from '../Row/Row';
 
 function Footer() {
@@ -8,7 +7,7 @@ const footerItem=['home','about','contact','article']
 <footer className={style.footerContainer}>
 <Row>
     <div className={style.innerContainer}>
-<img className={style.logo}  src="/Tastebites.png"/>
+<img className={style.logo} alt='logo'  src="/Tastebites.png"/>
 <ul>
 {footerItem.map((item,index)=>{
     return <li key={index}>{item}</li>

@@ -1,6 +1,4 @@
 import style from './FormTemplate.module.scss';
-import Row from '../Row/Row';
-import {Link} from 'react-router-dom';
 
 function FormTemplate(props) {
   return (
@@ -11,7 +9,7 @@ function FormTemplate(props) {
         {props.children}
 
         </div>
-<img src={props.templateData.image}/>
+<img alt='form' src={props.templateData.image}/>
 </div>
   );
 }

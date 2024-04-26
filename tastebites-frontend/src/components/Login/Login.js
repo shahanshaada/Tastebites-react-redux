@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import { loginSuccess } from '../../reducers/authReducer';
 import {useNavigate} from 'react-router-dom';
 import PopupModal from "../../shared-components/Popup/Popup";
+import { BACKEND_URL } from "../../environments/env";
 
 
 export default function Login() {
@@ -58,7 +59,7 @@ openModal()
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3001/users');
+            const response = await fetch(BACKEND_URL);
             const users = await response.json();
             const userLog = users.find(u => u?.user?.email === user.email && u?.user?.password === user.password);
             if (userLog) {

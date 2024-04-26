@@ -6,6 +6,7 @@ import { validateEmail, handleEmptyValue, validatePasswordLength, validatePasswo
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import PopupModal from "../../shared-components/Popup/Popup";
+import { BACKEND_URL } from "../../environments/env";
 
 
 
@@ -33,7 +34,7 @@ export default function SignUp() {
         e.preventDefault();
 
         try {
-            await axios.post('http://localhost:3001/users', { user });
+            await axios.post(BACKEND_URL, { user });
             openModal();
 
         } catch (error) {

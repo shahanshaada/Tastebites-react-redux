@@ -6,7 +6,7 @@ function Banner() {
   return (
 <Row>
     <div className={style.container}>
-    <img src="banner.png"/>
+    <img src="banner.png" alt='banner'/>
 <div className={style.content}>
     <div>About US</div>
     <p>

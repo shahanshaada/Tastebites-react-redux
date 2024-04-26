@@ -3,14 +3,24 @@ $tablet-width: 768px;
 $desktop-width: 1024px;
 $large-desktop-width:1440px;
 //color codes
+$white-01:#FFFFFF;
 $grey-01: #F9F9F9;
 $grey-02:#C9C9C9;
 $grey-03:rgba(217, 217, 217, 0.00);
 $grey-04:var(--Gray-600, #556070);
 $grey-05:#868686;
+$grey-06:#333;
+$grey-07: #eee;
+$grey-08:#E6E8EB;
+$grey-09:#87909D;
+$grey-10:#556070;
 $black-01:#000;
+$black-02: rgba(0, 0, 0, 0.5);
+$black-03:rgba(0, 0, 0, 0.3);
+$black-04:rgba(0, 0, 0, 0.06);
 $red-01:#E50000;
 $red-02:rgba(229, 0, 0, 0.18);
+$blue-01:#03337B;
 
 @mixin setSize($size, $length) {
     font-size: $size;

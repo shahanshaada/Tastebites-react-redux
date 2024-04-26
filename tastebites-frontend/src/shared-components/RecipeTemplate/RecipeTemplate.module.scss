@@ -1,60 +1,59 @@
 @import '../../utils.module.scss';
 
-.image{
-    width: 100%; 
-    height: auto; 
+.image {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
 .title {
-    color: #000;
-    font-size: 45px;
+    color: $black-01;
+    @include setSize(45px, 50px);
     font-weight: 600;
-    line-height: 50px;
     text-transform: capitalize;
     margin: 55px 0;
 }
 
 .content {
-    background: #F9F9F9;
+    background: $grey-01;
     padding: 70px 107px;
-    color: #000;
-    font-size: 20px;
+    color: $black-01;
+    @include setSize(20px, 40px);
     font-weight: 400;
-    line-height: 40px; 
     text-transform: capitalize;
+
     .recipe {
-        font-size: 33px;
+        @include setSize(33px, 50px);
         font-weight: 700;
-        line-height: 50px;
         margin-bottom: 53px;
     }
-    .intro{
+
+    .intro {
         margin-bottom: 30px;
     }
 }
 
 
-@include for-mobile-only{
-    .image{
+@include for-mobile-only {
+    .image {
         height: 300px;
     }
-    
+
     .title {
-        font-size: 28px;
-        line-height: 35px;
+        @include setSize(28px, 35px);
         margin: 25px 0;
-    }  
+    }
+
     .content {
-        font-size: 16px;
-        line-height: 24px; 
+        @include setSize(16px, 24px);
         padding: 20px;
+
         .recipe {
-            font-size: 20px;
-            line-height: 28px;
+            @include setSize(28px, 30px);
             margin-bottom: 30px;
         }
-        .intro{
+
+        .intro {
             margin-bottom: 18px;
         }
     }

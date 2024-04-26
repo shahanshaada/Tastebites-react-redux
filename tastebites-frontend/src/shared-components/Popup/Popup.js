@@ -1,4 +1,3 @@
-// PopupModal.js
 import React from 'react';
 import style from './Popup.module.scss';
 
